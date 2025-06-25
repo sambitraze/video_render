@@ -14,9 +14,6 @@ async function getVideoData() {
 
   const videoData = data.data.map((item) => {
     const fileUrl = `${BASE_URL}/${item.id}.mp4`;
-
-    console.log(fileUrl);
-
     return {
       mp4: fileUrl,
       poster: "", // you can set poster here if needed
